@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "bd8a9cd8-d061-448b-92e8-a2f911b085d7",
+		"name": "PracticaDiploma",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crear Alumno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\":\"Simon\",\n    \"listaAsignaturas\":[\n        {\n            \"nombre\":\"Matematicas\",\n            \"nota\":8\n        },\n        {\n            \"nombre\":\"POO\",\n            \"nota\":10\n        },\n        {\n            \"nombre\":\"Teoria de la Maldicion\",\n            \"nota\":9\n        },\n        {\n            \"nombre\":\"Ingles\",\n            \"nota\":9.5\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/diploma/crearAlumno",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"diploma",
+						"crearAlumno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ver Alumnos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/diploma/verAlumnos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"diploma",
+						"verAlumnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ver Diploma",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/diploma/Andres",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"diploma",
+						"Andres"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
